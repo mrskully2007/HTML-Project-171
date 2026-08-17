@@ -115,16 +115,27 @@ nav a:hover {
 }
 
 .skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
+
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .skills > div {
     background-color: white;
-    padding: 25px;
+    padding: 30px;
     border: 1px solid #ddd;
+    width: 50%;
+    min-height: 180px;
+    text-align: center;
+}
+.welcome hr {
+    width: 120px;
+    border-top: 3px solid #1683cf;
+    margin: 0 auto;
 }
 
 .skills h3 {
@@ -133,7 +144,7 @@ nav a:hover {
 
 .about {
     width: 90%;
-    margin: auto;
+    margin: 60px auto 40px;
     padding: 60px 0;
     display: grid;
     grid-template-columns: 35% 65%;
@@ -153,6 +164,11 @@ nav a:hover {
 
 .about-text {
     padding: 20px;
+    font-size: 17px;
+    line-height: 1;
+    padding-left: 18px;
+    border-left: 3px solid #0e628d;
+
 }
 
 .about-text h2 {
@@ -165,22 +181,36 @@ nav a:hover {
 }
 
 .skill-list {
-    width: 90%;
-    margin: auto;
+    width: 55%;
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+        gap: 25px;}
+        
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eef1f4;
+    padding: 70px 30px;
+}
+
+.skills h2 {
+    font-size: 38px;
+    color: #172238;
+    margin-top: 0;
+}
+.skill h3 {
+    color: #168bd0;
+    margin-top: 0;
 }
 
 .skill {
     background-color: white;
-    padding: 25px;
-    border: 1px solid #ddd;
-}
-
-.skill h3 {
-    color: #168bd0;
-}
+    padding: 30px 20px;
+    border: 2px solid #d8d7d7;
+    border-radius: 12px;}
 
 .experience {
     background-color: #26344d;
@@ -215,12 +245,17 @@ nav a:hover {
 .project {
     background-color: white;
     border: 1px solid #ddd;
+    padding: 30px;
+    margin: 15px;
 }
 
 .project img {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+    height: 450px;
     object-fit: cover;
+    object-position: bottom;
+    display: block;
+
 }
 
 .project-info {
@@ -231,6 +266,9 @@ nav a:hover {
 .project-info h3 {
     color: #168bd0;
 }
+.project button,
+.project a {
+        margin-top: 10px}
 
 .portfolio-more {
     background-color: #26344d;
